@@ -131,7 +131,7 @@ def interface_matcher(clazz, subclass, protocol):   # pragma: no cover
 
         """
         for setting in device.iterSettings():
-            if get_interface(setting) == interface:
+            if get_interface(setting)[:-1] == interface[:-1]: #ignoring advertised protocol
                 return setting
         return None
 
