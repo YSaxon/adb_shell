@@ -7,7 +7,7 @@ with open("README.rst") as f:
 
 setup(
     name="adb_shell",
-    version="0.4.4m",
+    version="0.4.5",
     description="A Python implementation of ADB with shell and FileSync functionality.",
     long_description=readme,
     keywords=["adb", "android"],
